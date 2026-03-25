@@ -1,8 +1,24 @@
 # Financial-Fraud-Detection-Anomaly-Detection-in-Credit-Card-Transactions
 This project focused on financial fraud detection by analyzing credit card transaction data to identify patterns that differentiate fraudulent and non-fraudulent behavior. 
-The objective was to support fraud and risk teams with data-driven insights rather than just building a predictive model.
 
-The key success metrics were:
+Project Objectives:
+•	Understand the structure and characteristics of transaction data
+•	Identify patterns of fraudulent vs non-fraudulent transactions
+•	Detect anomalies and outliers in transaction behavior
+•	Analyze trends across time, geography, and customer segments
+•	Support fraud detection using data-driven insights
+
+Data Description
+•	Type: Structured transactional dataset
+•	Domain: Financial / Credit card transactions
+•	Size: ~389,000 records with 23 features
+•	Key Variables:
+1. Numerical: Transaction amount, city population, latitude, longitude, time
+2. Categorical: Merchant, category, gender, job, city, state
+3. Target Variable: Fraud indicator (is_fraud: 0/1)
+
+
+The key success metrics are:
 1.	Clear separation of fraud vs non-fraud behavior: Fraudulent transactions showed higher average amounts and extreme outliers, confirming meaningful behavioral differences.
 2.	Identification of high-risk patterns: Ability to isolate high-risk categories, merchants, and time windows where fraud occurs more frequently.
 3.	Analytical consistency across tools: Findings from Python EDA were validated using SQL aggregations and Excel summaries, ensuring reliability.
@@ -19,5 +35,6 @@ Key Insights: The most important insights from the analysis were:
 4.	Geographic variables alone do not directly explain fraud: While location variables are highly correlated with each other, they do not individually predict fraud. However, they provide strong potential for feature engineering, such as distance between customer and merchant.
 5.	Fraud detection is multi-factor and subtle: No single variable explains fraud. Effective fraud detection depends on combining amount, timing, category, and behavioral patterns, which mirrors real-world fraud scenarios.
 
-Tools: Excel, Tableau, MySQL, Python
+Tools: Excel, Tableau, SQL, Python (Pandas, Matplotlib, Seaborn) - Exploratory Data Analysis (EDA)
+
 
